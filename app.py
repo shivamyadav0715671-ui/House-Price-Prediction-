@@ -44,7 +44,8 @@ with st.spinner('predicting House prize'):
   time.sleep(2)
 
 st.success(f'Estimated House Prize is: ${final_ prize}')
-st.merkdown('''**DESIGN and DEVELOPMENT by: SHIVAM YADAV**''')
+st.merkdown('''**Designed and Developed by: SHIVAM YADAV**''')
+
 
 
 
