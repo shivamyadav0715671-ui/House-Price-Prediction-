@@ -31,8 +31,8 @@ user_X = scaler.transfrom([all_value])
 @st.cache_data
 def ml_model(X,y):
  model = RandomForestRegressor()
-  model.fit(X,y)
-  return model 
+ model.fit(X,y)
+ return model 
 
 model = ml_model(scaled_X,y)
 house_price = model.predict(user_X)[0]
@@ -45,3 +45,4 @@ with st.spinner('predicting House price'):
 
 st.success(f'Eestimated House Price is: ${final_ price}')
 st.merkdown('''**DESIGN and DEVELOPMENT by: SHIVAM YADAV**''')
+
