@@ -39,11 +39,12 @@ house_price = model.predict(user_X)[0]
 
 final_price = round(house_price * 1000000,2)
 
-with st.spinner('predicting House price'):
+with st.spinner('predicting House prize'):
   import time
   time.sleep(2)
 
-st.success(f'Eestimated House Price is: ${final_ price}')
+st.success(f'Estimated House Prize is: ${final_ prize}')
 st.merkdown('''**DESIGN and DEVELOPMENT by: SHIVAM YADAV**''')
+
 
 
