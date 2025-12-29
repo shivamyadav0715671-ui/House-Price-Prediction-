@@ -21,7 +21,7 @@ st.sidebar.title('Select House features: ')
 st.sidebar.image('https://cdn.dribbble.com/userupload/20000742/file/original-aaf23458355a156d0cf85b8217a5065a.gif')
 all_value = []
 for i in final_X:
-  mai_value = final_x[i].min()
+  mai_value = final_X[i].min()
   max_value = final_x[i].max()
   result = st.sidebar.slider(f'Select {i} value',min_value,max_value)
   all_value.append(result)
@@ -45,6 +45,7 @@ with st.spinner('predicting House prize'):
 
 st.success(f'Estimated House Prize is: $ {final_prize}')
 st.merkdown('''**Designed and Developed by: SHIVAM YADAV**''')
+
 
 
 
